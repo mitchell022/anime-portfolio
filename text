@@ -1,0 +1,30 @@
+ <section class="header">
+        <div>
+            <div>
+                <img src="/images/nft.avif" alt="" height="400">
+            </div>
+            <div>
+                <h1>I'M MITCHELL</h1>
+                p
+            </div>
+        </div>
+    </section>
+
+    <div class="items-first">
+        c
+        <div>
+            <img src="/images/nft.avif" alt="" height="300">
+        </div>
+    </div>
+   
+    <div class="items-third">
+        c
+        <div>
+            <h2>Hello.</h2>
+            <p>I am programmer, web designer with experience in crypto currency, trading and investment.</p>
+        </div>
+
+        grid-template-columns: 1fr ;
+        grid-template-rows: 600px 600px 600px 600px;
+        gap: 10px;
+    }

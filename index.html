@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mitchell project</title>
+
+    <link href="https://fonts.cdnfonts.com/css/anime-ace" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Matemasie&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Matemasie&family=SUSE:wght@100..800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://useanimations.com/index.html">
+    <style>
+        @import url('https://fonts.cdnfonts.com/css/anime-ace');
+
+        body {
+            margin: 0;
+            padding: 0;
+            color: #153448;
+            width: 100vw;
+        }
+
+
+        .container {
+            display: inline-flex;
+            flex-direction: column;
+            width: 100vw;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 0;
+            margin: 0;
+        }
+
+        .items-first {
+            flex-basis: 1;
+            background-color: #3C5B6F;
+            width: 100%;
+        }
+
+        .clouds-one {
+            margin-right: 20%;
+        }
+
+        .clouds-two {
+            margin-left: 20%;
+        }
+
+        .items-first div h1 {
+            font-family: "Matemasie", sans-serif;
+            font-weight: 900;
+            font-style: normal;
+            color: #153448;
+            padding-bottom: 10px;
+            font-size: 5rem
+        }
+
+        .items-first div p {
+            font-family: "Anime Ace", sans-serif;
+            font-weight: lighter;
+            font-style: normal;
+            color: #153448;
+            font-size:
+    
+        }
+
+        .items-second {
+            background-color: #DFD0B8;
+            width: 100%;
+            flex-basis: 1;
+            padding-top: 150px;
+            margin: 0;
+        }
+
+        .items-second h2 {
+            font-family: "Matemasie", sans-serif;
+            color: #153448;
+            margin-bottom: 50px;
+            margin-top: 50px;
+            font-size: 2rem;
+        }
+
+        .items-second p {
+            font-family: "Anime Ace", sans-serif;
+            font-weight: 100;
+            font-size: 15px;
+            color: #1534489d;
+            line-height: 2;
+        }
+
+        .items-second div {
+            text-align: center;
+            margin: 0 20% 5% 20%;
+        }
+
+        .profile-pic {
+            border-radius: 50%;
+        }
+
+        .logo {
+            margin-top: 50px;
+            padding: 0;
+            margin-bottom: 0;
+            border-radius: 5%;
+        }
+
+        .items-third {
+            background-color: #DFD0B8;
+            width: 100%;
+
+        }
+
+        .items-third h2 {
+            text-align: center;
+
+        }
+
+        .second-container {
+
+            width: 100%;
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr 1fr;
+            text-align: left;
+            gap: 0;
+            margin-top: 0;
+            padding-bottom: 50px;
+
+        }
+
+        .second-container h2 {
+            font-family: "Matemasie", sans-serif;
+            color: #153448;
+            font-size: 2rem;
+            text-align: center;
+            margin: 0;
+            padding-bottom: 20px;
+            align-self: flex-end;
+        }
+
+
+        .skill img {
+            float: left;
+        }
+
+        .skill-text {
+            padding-top: 40px;
+        }
+
+        .sub-heading {
+            font-family: "Anime Ace", sans-serif;
+            font-weight: lighter;
+            font-size: 15px;
+            color: #153448;
+        }
+
+        .skill-text p {
+            font-family: "SUSE", sans-serif;
+            font-size: 20px;
+        }
+
+        .skills-sub-div {
+            margin-left: 25%;
+            margin-right: 25%;
+            margin-top: 0;
+        }
+
+        .fourth-container {
+
+            margin: 0 25% 3% 25%;
+            padding-top: 100px;
+
+            flex-basis: 1;
+        }
+
+        .items-fourth {
+            flex-basis: 1;
+            width: 100%;
+            margin: auto;
+            background-color: #DFD0B8;
+
+        }
+
+        .items-fourth h2 {
+            font-family: "Matemasie", sans-serif;
+            color: #153448;
+            margin-bottom: 70px;
+            font-size: 3rem;
+            margin-top: 10px;
+            padding-top: 0;
+        }
+
+        .items-fourth h3 {
+            font-family: "Anime Ace", sans-serif;
+            font-weight: lighter;
+            font-size: 15px;
+            color: #153448;
+            margin: 50px;
+        }
+
+        .items-fourth p {
+            font-family: "SUSE", sans-serif;
+            font-size: 20px;
+        }
+
+
+        button {
+
+            margin: 50px;
+            border: 0px;
+            height: 40px;
+            width: 155px;
+            border-radius: 5px;
+            font-size: large;
+            text-transform: uppercase;
+            background-color: #FFC816;
+            color: #3C5B6F;
+            box-shadow: 1px 1px 3px #3C5B6F;
+
+        }
+
+        button a {
+            font-family: "SUSE", sans-serif;
+            font-weight: 600;
+            text-decoration: none;
+        }
+
+        footer {
+            text-align: justify;
+            background-color: #153448;
+            width: 100%;
+            height: 110px;
+            color: #948979;
+        }
+
+        .svg {
+            display: inline-block;
+            margin: 5%;
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+
+        .fifth-item  {
+            width: 100%;
+        }
+
+        .brand {
+            font-size: 10px;
+        }
+
+        @media (max-width: 600px) {
+            .clouds-one  {
+                margin: auto;
+                padding: auto;
+            }
+
+            .clouds-two  {
+                margin: auto;
+                padding: auto;
+            }
+            
+            .items-first div h1 {
+                font-size: 2rem;
+            }
+
+            .items-first div p {
+                font-size: 15px;
+                margin-left: 10px;
+                margin-right: 10px;
+            }
+
+            .profile-div {
+                margin: 0;
+            }
+
+            .items-second > div{
+                margin: 0;
+            }
+
+            .items-second p {
+                font-size: 11px;
+                padding-bottom: 20px;
+            }
+
+            .items-second h2 {
+                font-size: larger;
+                margin-bottom: 0;
+            }
+            
+            .second-container {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+                padding-bottom: 0;
+                text-align: start;
+            }
+
+            .second-container h2 {
+                align-self: center;
+                padding-top: 50px;
+                padding-bottom: 0;
+                font-size: ;
+            }
+
+            .second-container h3 {
+                font-size: 12px;
+                
+            }
+
+            .skills-sub-div {
+              margin-left: 0;
+              margin-right: 0;
+              
+            }
+
+            .skill-text p {
+                font-size: medium;
+                padding-right: 20px;
+            }
+
+            .sub-heading {
+                font-size: medium;
+                margin: 0;
+            }
+
+            .items-fourth p{
+                font-size: medium;
+            }
+
+            .items-fourth h3 {
+                font-size: 12px;
+                margin: 0;
+                margin-bottom: 30px;
+            }
+
+            .items-fourth h2 {
+                font-size: 2rem;
+            }
+
+            button {
+                margin: 0;
+            }
+
+           .button-div {
+            margin-top: 30px;
+            margin-bottom: 50px;
+           }
+        }
+
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="items items-first">
+            <div>
+                <img class="clouds-one" src="./images/cloud.png" alt="" height="200">
+                <img class="clouds-two" src="./images/cloud.png" alt="">
+                <h1 class="intro ">I'M MITCHELL</h1>
+                <p>A programmer, web designer & a crypto currency trader</p>
+            </div>
+            <div>
+
+                <img class="logo" src="/images/nft.avif" alt="" height="300">
+            </div>
+        </div>
+
+        <div class="items items-second">
+            <div>
+                <div class="profile-div">
+                    <img class="profile-pic" src="./images/nft (1).avif" alt="" height="200px">
+                </div>
+                <div>
+                    <h2>Hello.</h2>
+                    <p>I am programmer, web designer with experience in crypto currency, trading and investment.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="items items-third">
+            <div class="second-container">
+                <h2>my skills</h2>
+                <div class="skills-sub-div">
+
+                    <div class="skill">
+                        <img class="skill-image" src="./images/laptop.png" alt="" height="200px">
+                    </div>
+                    <div class="skill-text">
+                        <h3 class="sub-heading">web design and development</h3>
+                        <p>I started learning to code last month. Over time, I have gained experience designing web
+                            applications.</p>
+                    </div>
+                </div>
+                <div class="skills-sub-div">
+                    <div class="skill">
+                        <img class="skill-image" src="./images/laptop.png" alt="" height="200px">
+                    </div>
+                    <div class="skill-text">
+                        <h3 class="sub-heading">crypto trading and investment</h3>
+                        <p>But my best skills is trading crypto and partaking in any potential airdrops in hope of
+                            making good money</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="items items-fourth">
+            <div class="fourth-container">
+                <div>
+                    <h2>Reach Out</h2>
+
+                    <h3>want to learn about crypto currency?</h3>
+                    <p>If you're intrigued by the world of cryptocurrency or on the lookout for legitimate airdrop
+                        opportunities, we'd love to hear from you!</p>
+                </div>
+                <div class="button-div">
+                    <button> 
+                        <a href="#footer">contact me</a>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <footer id="footer" class="container">
+        <div class="fifth-item">
+            <div class="svg">
+                <a href="https://www.instagram.com/mitchelltopg?utm_source=qr&igsh=ajZlbG0yeHdxcjFo">
+                    <img src="./Instagram (1)/instagram.svg" alt="">
+                </a>
+            </div>
+            <div class="svg">
+                <a href="https://www.michaelshedrack10@gmail.com">
+                    <img src="/Mail/mail.svg" alt="">
+                </a>
+            </div>
+
+            <div class="svg">
+                <a href="https://github.com/mitchell022">
+                    <img src="./Github/github.svg" alt="">
+                </a>
+            </div>
+
+            <div class="brand">
+                <p>© mitchell</p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
